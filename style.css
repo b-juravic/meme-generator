@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin:0;
+}
+
+.header {
+  border-style: solid;
+  border-color: #0077b3;
+  border-width: 1px;
+  text-align: center;
+  padding: 1.8%;
+  background-color: rgba(0, 102, 153, 1);
+  color: white;
+  font-family: 'GillSans';
+}
+
+.intro {
+  position: relative;
+  background: url("/background2.jpg");
+  text-align: center;
+  font-family: 'GillSans';
+}
+
+.intro-content h1 {
+  background-color: rgba(0, 102, 153, .85);
+  color: white;
+  font-size: 8vw;
+  padding: 8% 5%;
+}
+
+.intro-p {
+  color: white;
+  font-size: 4vw;
+  }
+
+.steps-container {
+  display: flex;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  justify-content: center;
+}
+
+.steps {
+  font-family: 'GillSans';
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 1px;
+  border-radius: 7px;
+  background-color: rgba(0, 102, 153, 1);
+  color: white;
+  margin: 3% 4%;
+  padding: 2%;
+  max-width: 60vw;
+}
+
+.steps p {
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+.steps, h4, h2 {
+  font-size: 2.5vw;
+  text-align: left;
+}
+
+#make-meme-btn {
+  background-color: rgba(0, 102, 153, 1);
+  border-color: rgba(0, 102, 153, 1);
+  font-family: 'GillSans';
+  font-size: 1.8vw;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 2% 15%;
+}
+
+#meme-form {
+  color: #595959;
+}
+
+.form-control {
+  font-family: 'GillSans-Light';
+  font-size: 1.75vw;
+}
+#form-legend {
+  font-family: 'GillSans-SemiBold';
+  font-size: 2vw;
+}
+
+.meme-container {
+  padding-top: 2%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+}
+
+.meme {
+  display: block;
+  position: relative;
+  width: 40%;
+  height: 30vw;
+  margin: 2%;
+}
+
+.pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.upper-text, .lower-text {
+  position: absolute;
+  width:100%;
+  color: white;
+  -webkit-text-stroke-width: .1vw;
+  -webkit-text-stroke-color: black;
+  font-size: 3.7vw;
+  font-family: 'GillSans-BoldItalic';
+}
+
+.upper-text {
+  top: 5px;
+}
+
+.lower-text {
+  bottom: 5px;
+}
+
+.delete-meme-btn {
+  display: block;
+  position: absolute;
+  font-family: 'GillSans';
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  opacity: 0;
+}
+
+.pic, .upper-text, .lower-text, .delete-meme-btn {
+  transition: .4s ease-in-out;
+}
+
+.meme:hover .pic {
+  opacity: .3;
+}
+
+.meme:hover .upper-text {
+  opacity: .3;
+}
+
+.meme:hover .lower-text {
+  opacity: .3;
+}
+
+.meme:hover .delete-meme-btn {
+  opacity: 1;
+}
+
+.meme:focus .delete-meme-btn {
+  opacity: 1;
+}
+
+@media screen and (max-width: 575px) {
+  .steps {
+    margin-right: 1%;
+    margin-left: .75%;
+  }
+  .steps, h4, h2 {
+    font-size: 3.7vw;
+  }
+  .steps p {
+    font-size: 2.9vw;
+  }
+  #form-legend {
+    font-size: 3.7vw;
+  }
+  .form-control {
+    font-size: 2.9vw;
+  }
+  .intro-content h1 {
+    font-size: 13vw;
+    padding: 15% 5%;
+  }
+  .intro-p {
+    font-size: 6vw;
+  }
+  .header {
+    padding: 3%;
+  }
+  #make-meme-btn {
+    font-size: 2.9vw;
+  }
+  .delete-meme-btn {
+    font-size: 2vw;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meme It</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <div class="container-fluid header navbar sticky-top"></div>
+  <div class="container-fluid intro">
+    <div class="container-fluid intro-content"><h1 class="container-fluid">Meme It!<p class="intro-p">Create your own memes</p></h1></div>
+  </div>
+  <div class="container-fluid steps-container row">
+    <div class="container steps col-sm"><h4>Step 1</h4><p>Provide a link to the image you want to meme.</p></div>
+    <div class="container steps col-sm"><h4>Step 2</h4><p>Tell us what the meme should say.</p></div>
+    <div class="container steps col-sm"><h4>Step 3</h4><p>Submit to see your meme displayed!</p></div>
+  </div>
+  <div class="container-fluid form-container">
+    <form id="meme-form" class="container justify-content-center" autocomplete="off">
+        <legend id="form-legend">Create Your Meme</legend>
+          <div class="col-sm form-group">
+            <input type="URL" class="form-control" id="pic-url" placeholder="1. image url">
+        </div><br>
+          <div class="col-sm form-group">
+            <input type="text" class="form-control" id="top-text" placeholder="2. meme top text">
+        </div><br>
+          <div class="col-sm form-group">
+            <input type="text" class="form-control" id="bottom-text" placeholder="3. meme bottom text">
+        </div><br>
+          <button class="btn btn-primary btn-block" id="make-meme-btn" type="submit">Meme It!</button>
+    </form>
+  </div>
+  <div class="container-fluid meme-container" id="memes">
+  </div>
+  <script src="/meme-generator.js"></script>
+</body>
+</html>
