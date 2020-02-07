@@ -21,7 +21,7 @@
 
 .intro {
   position: relative;
-  background: url("/background2.jpg");
+  background: url("background2.jpg");
   text-align: center;
   font-family: 'GillSans';
 }
